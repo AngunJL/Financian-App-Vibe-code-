@@ -69,7 +69,7 @@ function updateDashboard() {
     });
 
     let balance = income - expenses;
-    let savings = income * 0.2; // หรือปรับสูตรเงินออมตามชอบ
+    let savings = income - expenses; // หรือปรับสูตรเงินออมตามชอบ
 
     // อัปเดตตัวเลขแสดงผลบนการ์ด 4 ใบ
     document.getElementById('total-balance').innerText = `$${balance.toLocaleString(undefined, { minimumFractionDigits: 2 })}`;
